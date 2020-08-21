@@ -23,6 +23,7 @@
       }
     }
   }
+
   .promo {
     &__header {
       font-size: 66px;
@@ -36,6 +37,12 @@
 
     &__icon {
       width: 225px;
+    }
+  }
+
+  .advantages {
+    &__items {
+      width: 455px;
     }
   }
 }
@@ -103,6 +110,11 @@
     &__icon {
       width: 205px;
       font-size: 14px;
+    }
+  }
+  .advantages {
+    &__items {
+      width: 355px;
     }
   }
 }
@@ -179,6 +191,13 @@
     &__icon {
       width: 205px;
       font-size: 12px;
+    }
+  }
+  .advantages {
+    &__items {
+      width: 245px;
+      align-items: center;
+      flex-direction: column;
     }
   }
 }
