@@ -1,0 +1,41 @@
+.works {
+  min-height: 619px;
+  padding: 51px 0 57px 0;
+
+  &__subtitle {
+    max-width: 880px;
+    text-align: center;
+    margin: 17px auto 0 auto;
+    font-size: 21px;
+    font-weight: 300;
+    color: #2e2e2e;
+  }
+
+  &__wrapper {
+    margin-top: 37px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__items {
+    width: 360px;
+  }
+
+  &__descr {
+    margin-top: 28px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #3a3a3a;
+    text-align: justify;
+
+    span {
+      display: block;
+      text-align: center;
+      margin-bottom: 10px;
+      font-size: 18px;
+      line-height: 18px;
+      font-weight: 700;
+      color: #ec644b;
+    }
+  }
+}
