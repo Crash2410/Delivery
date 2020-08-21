@@ -45,6 +45,12 @@
       width: 455px;
     }
   }
+
+  .works{
+    &__items{
+      width: 300px;
+    }
+  }
 }
 
 @media (max-width: 991px) {
@@ -115,6 +121,18 @@
   .advantages {
     &__items {
       width: 355px;
+    }
+  }
+
+  .works{
+    padding: 51px 0 27px 0;
+    &__wrapper{
+      flex-wrap: wrap;
+    }
+
+    &__items{
+      margin: 0 auto;
+      margin-bottom: 30px;
     }
   }
 }
