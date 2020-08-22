@@ -1,5 +1,6 @@
 .consultation {
   min-height: 344px;
+  padding-bottom: 58px;
 
   &__title {
     margin-bottom: 0;
@@ -13,7 +14,7 @@
     position: relative;
     margin: 71px auto 0 auto;
     max-width: 1140px;
-    height: 166px;
+    min-height: 166px;
     border: 1px solid gray;
   }
 }
