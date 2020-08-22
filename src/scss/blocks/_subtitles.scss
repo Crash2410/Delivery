@@ -1,8 +1,17 @@
-.subtitle{
-    max-width: 880px;
+.subtitle {
+  max-width: 880px;
+  text-align: center;
+  margin: 17px auto 0 auto;
+  font-size: 21px;
+  font-weight: 300;
+  color: #2e2e2e;
+
+  &_advantage {
+    margin: 22px auto 0 auto;
     text-align: center;
-    margin: 17px auto 0 auto;
-    font-size: 21px;
+    max-width: 985px;
+    font-size: 19px;
     font-weight: 300;
-    color: #2e2e2e;
+    color: #ffffff;
+  }
 }
