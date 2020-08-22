@@ -1,0 +1,19 @@
+.wrapper {
+  &_img {
+    position: absolute;
+    top: -51px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffffff;
+    padding: 0 10px;
+  }
+
+  &_button {
+    position: absolute;
+    bottom: -21px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffffff;
+    padding: 0 10px;
+  }
+}
