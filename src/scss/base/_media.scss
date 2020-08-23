@@ -254,6 +254,21 @@
       margin-bottom: 30px;
     }
   }
+
+  .carusel{
+    &__inner{
+      width: 500px;
+    }
+
+    .slick-center {
+      font-size: 12px;
+      margin: 0 auto;
+  
+      span {
+        font-size: 16px;
+      }
+    }
+  }
 }
 
 @media (max-width: 575px) {
@@ -329,6 +344,22 @@
   .consultation {
     .feed-form {
       margin-bottom: 30px;
+    }
+  }
+
+  .carusel{
+    &__inner{
+      width: 320px;
+      font-size: 12px;
+    }
+
+    .slick-center {
+      font-size: 12px;
+      margin: 0 auto;
+  
+      span {
+        font-size: 16px;
+      }
     }
   }
 }
