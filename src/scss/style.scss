@@ -5,6 +5,12 @@
 .container {
   width: 1150px;
   margin: 0 auto;
+
+  &_carusel {
+    width: 1400px;
+    margin: 0 auto;
+    padding: 31px 0 65px 0;
+  }
 }
 
 @import "blocks/header";
@@ -14,13 +20,15 @@
 @import "blocks/advantages";
 @import "blocks/lines";
 @import "blocks/works";
-@import 'blocks/agents';
-@import 'blocks/subtitles';
-@import 'blocks/prices';
-@import 'blocks/forms';
-@import 'blocks/consultation';
-@import 'blocks/wrappers';
-@import 'blocks/managers';
-@import 'blocks/methods';
+@import "blocks/agents";
+@import "blocks/subtitles";
+@import "blocks/prices";
+@import "blocks/forms";
+@import "blocks/consultation";
+@import "blocks/wrappers";
+@import "blocks/managers";
+@import "blocks/methods";
+@import "blocks/comments";
+@import "blocks/carusel";
 
 @import "base/media";
