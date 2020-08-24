@@ -1,7 +1,7 @@
 .questions {
   background: url("../../img/backgrounds/background_4.png") center
     (center/cover) no-repeat;
-  height: 438px;
+  min-height: 438px;
   padding: 62px 0 79px 0;
 
   &__wrapper {
