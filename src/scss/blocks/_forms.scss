@@ -4,6 +4,7 @@
   margin: 68px auto 0 auto;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 
   input {
     outline: none;
@@ -16,5 +17,25 @@
     font-size: 12px;
     font-weight: 300;
     padding: 0 20px;
+  }
+
+  &_questions {
+    margin-top: 17px;
+    textarea {
+      padding: 0;
+      margin: 10px auto 0 auto;
+      height: 75px;
+      width: 100%;
+      border-radius: 15px;
+      font-size: 12px;
+      font-weight: 300;
+      padding: 0 20px;
+      resize: none;
+      outline: none;
+    }
+  }
+
+  textarea{
+    padding-top: 20px;
   }
 }

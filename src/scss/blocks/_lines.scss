@@ -3,4 +3,10 @@
   height: 1px;
   background-color: #eb7039;
   margin: 20px auto 0 auto;
+
+  &_footer{
+    width: 100%;
+    background-color: gray;
+    margin-bottom: 20px;
+  }
 }
