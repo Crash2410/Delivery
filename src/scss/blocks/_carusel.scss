@@ -1,17 +1,14 @@
 .carusel {
-  position: relative;
   padding-bottom: 20px;
 
-
   &__inner {
+    max-width: 700px;
     transition: 0.6s all;
-    width: 602px;
+    padding: 10%;
     opacity: 0.6;
-    font-size: 9px;
+    font-size: 10px;
     text-align: center;
     font-weight: 300;
-
-    
 
     span {
       display: block;
@@ -26,22 +23,26 @@
       margin: 0 auto;
     }
   }
-  
 
   .slick-center {
-    transition: 0.6s margin-top;
-    opacity: 1;
+    transition: 0.6s all;
     margin: 60px auto 0 auto;
-    font-size: 14.1px;
-    text-align: center;
-    font-weight: 300;
 
-    span {
-      display: block;
-      margin: 0 auto;
-      font-size: 18px;
-      font-weight: 700;
-      color: #3a3a3a;
+    .carusel__inner {
+      transform: translateX(-17.5%);
+      font-size: 14.1px;
+      text-align: center;
+      font-weight: 300;
+      opacity: 1;
+      min-width: 670px;
+
+      span {
+        display: block;
+        margin: 0 auto;
+        font-size: 18px;
+        font-weight: 700;
+        color: #3a3a3a;
+      }
     }
   }
 
@@ -111,5 +112,4 @@
       }
     }
   }
-  
 }

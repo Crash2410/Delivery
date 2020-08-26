@@ -69,6 +69,27 @@
       width: 90%;
     }
   }
+
+  .comments {
+    .carusel {
+      &__inner {
+        opacity: 1;
+        width: 600px;
+        padding: 0;
+        margin: 0 auto;
+      }
+
+      .slick-prev,
+      .slick-next {
+        left: 31%;
+      }
+
+      .slick-next {
+        left: auto;
+        right: 31%;
+      }
+    }
+  }
 }
 
 @media (max-width: 991px) {
@@ -77,6 +98,10 @@
   }
 
   .header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
     .button {
       width: 115px;
       height: 35px;
@@ -99,13 +124,8 @@
       }
     }
     &__menu {
-      &-item {
-        padding-right: 5px;
-      }
-
       &-link {
-        margin-left: 5px;
-        font-size: 12px;
+        font-size: 14px;
       }
     }
 
@@ -117,11 +137,14 @@
       }
     }
   }
+
   .promo {
     &__line {
       width: 90%;
     }
-
+    &__head {
+      margin-top: 15px;
+    }
     &__header {
       font-size: 65px;
       line-height: 65px;
@@ -190,10 +213,12 @@
   }
 
   .header {
+    padding: 25px 0 0 0;
+
     .button {
-      width: 80px;
+      width: 130px;
       height: 35px;
-      font-size: 8px;
+      font-size: 9px;
       line-height: 8px;
 
       &_main {
@@ -201,6 +226,69 @@
         height: 45px;
         font-size: 15px;
         font-weight: 700;
+      }
+    }
+
+    &__menu {
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      position: fixed;
+      top: 0;
+      left: -100%;
+      width: 50%;
+      height: 100vh;
+      padding: 20px 15px;
+      background-color: rgba(0, 0, 0, 0.8);
+      transition: 0.6s all;
+
+      &_active {
+        left: 0;
+      }
+
+      &-item {
+        margin: 10px 0;
+        font-size: 20px;
+        border: none;
+      }
+
+      &-link {
+        display: block;
+        font-size: 20px;
+      }
+    }
+
+    .hamburger {
+      display: block;
+      position: fixed;
+      right: 15px;
+      top: 20px;
+      transform: translateY(-50%);
+      width: 26px;
+      height: 12px;
+      span {
+        display: block;
+        height: 2px;
+        width: 100%;
+        background-color: #ec644b;
+        margin-bottom: 2px;
+        transition: 0.6s all;
+      }
+      &_active {
+        span {
+          box-shadow: 5px 5px 10px #ec644b;
+          background-color: #ec644b;
+          margin-bottom: -2px;
+          &:nth-child(1) {
+            transform: translateY(3px) rotate(-45deg);
+          }
+          &:nth-child(2) {
+            display: none;
+          }
+          &:nth-child(3) {
+            transform: translateY(3px) rotate(45deg);
+          }
+        }
       }
     }
 
@@ -213,18 +301,6 @@
       }
     }
 
-    &__menu {
-      &-item {
-        padding-right: 3px;
-        border: none;
-      }
-
-      &-link {
-        margin-left: 3px;
-        font-size: 10px;
-      }
-    }
-
     &__contacts {
       font-size: 9px;
 
@@ -233,6 +309,7 @@
       }
     }
   }
+
   .promo {
     &__head {
       margin-top: 10px;
@@ -253,9 +330,13 @@
       line-height: 30px;
     }
 
+    &__icons {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
     &__icon {
-      width: 205px;
-      font-size: 12px;
+      margin-bottom: 20px;
     }
   }
   .advantages {
@@ -272,18 +353,26 @@
     }
   }
 
+  .questions {
+    &__wrapper {
+      width: 95%;
+    }
+  }
+
+ .comments{
   .carusel {
     &__inner {
-      width: 500px;
-    }
-
-    .slick-center {
-      font-size: 12px;
+      opacity: 1;
+      max-width: 500px;
+      padding: 0;
       margin: 0 auto;
+    }
+  }
+ }
 
-      span {
-        font-size: 16px;
-      }
+  .footer {
+    &__title {
+      text-align: center;
     }
   }
 }
@@ -293,30 +382,41 @@
     width: 100%;
   }
 
+  .button {
+    width: 130px;
+    height: 35px;
+    font-size: 8px;
+    line-height: 8px;
+
+    &_main {
+      width: 200px;
+      height: 45px;
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    &_tabs {
+      width: 120px;
+      height: 35px;
+      font-size: 10px;
+    }
+
+    &_form {
+      width: 120px;
+      height: 35px;
+      font-size: 10px;
+    }
+
+    &_mg {
+      width: 120px;
+      height: 35px;
+      font-size: 10px;
+    }
+  }
+
   .header {
     flex-wrap: wrap;
     justify-content: space-around;
-
-    .button {
-      width: 80px;
-      height: 35px;
-      font-size: 8px;
-      line-height: 8px;
-
-      &_main {
-        width: 200px;
-        height: 45px;
-        font-size: 15px;
-        font-weight: 700;
-      }
-    }
-
-    &__menu {
-      &-link {
-        margin-left: 3px;
-        font-size: 9px;
-      }
-    }
 
     &__contacts {
       font-size: 9px;
@@ -326,6 +426,7 @@
       }
     }
   }
+
   .promo {
     &__head {
       margin-top: 10px;
@@ -365,29 +466,27 @@
     &_questions {
       display: flex;
       flex-direction: column;
+
       input {
-        min-width: 300px;
+        min-width: 280px;
       }
 
       textarea {
-        max-width: 300px;
+        max-width: 280px;
       }
     }
   }
 
-  .carusel {
-    &__inner {
-      width: 320px;
-      font-size: 12px;
-    }
-
-    .slick-center {
-      font-size: 12px;
-      margin: 0 auto;
-
-      span {
-        font-size: 16px;
+  .comments{
+    .carusel {
+      &__inner {
+        opacity: 1;
+        max-width: 270px;
+        padding: 0;
+        margin: 0 auto;
       }
     }
-  }
+   }
+
+   
 }
