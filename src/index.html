@@ -1,30 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="./icons/favicon.ico" type="image/x-icon">
+    <title>Delivery</title>
     <link rel="stylesheet" href="./css/bootstrap-reboot.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/aos.css">
     <link rel="stylesheet" href="./css/slick.css">
     <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
 <body>
-    <section class="promo">
+    <section id="up" class="promo">
         <div class="container">
             <header class="header">
 
                 <a class="header__logo" href="#"><img src="./icons/logo.png" alt=""></a>
 
                 <ul class="header__menu">
-                    <li class="header__menu-item"><a href="#" class="header__menu-link">Преимущества</a></li>
-                    <li class="header__menu-item"><a href="#" class="header__menu-link">Наша работа</a></li>
-                    <li class="header__menu-item"><a href="#" class="header__menu-link">Цены</a></li>
-                    <li class="header__menu-item"><a href="#" class="header__menu-link">Схема работы</a></li>
-                    <li class="header__menu-item"><a href="#" class="header__menu-link">Отзывы</a></li>
-                    <li class="header__menu-item"><a href="#" class="header__menu-link">Контакты</a></li>
+                    <li class="header__menu-item"><a href="#advantages" class="header__menu-link">Преимущества</a></li>
+                    <li class="header__menu-item"><a href="#works" class="header__menu-link">Наша работа</a></li>
+                    <li class="header__menu-item"><a href="#prices" class="header__menu-link">Цены</a></li>
+                    <li class="header__menu-item"><a href="#methods" class="header__menu-link">Схема работы</a></li>
+                    <li class="header__menu-item"><a href="#comments" class="header__menu-link">Отзывы</a></li>
+                    <li class="header__menu-item"><a href="#questions" class="header__menu-link">Контакты</a></li>
                 </ul>
 
                 <div class="hamburger">
@@ -75,13 +78,13 @@
         </div>
     </section>
 
-    <section class="advantages">
+    <section id="advantages" class="advantages">
         <div class="container">
-            <h2 class="title">Преимущества работы с GlobalOpt</h2>
+            <h2 data-aos="zoom-in" data-aos-duration="1500" class="title">Преимущества работы с GlobalOpt</h2>
 
             <div class="advantages__wrapper">
 
-                <div class="advantages__items">
+                <div data-aos="flip-left" data-aos-duration="1500" class="advantages__items">
                     <img class='advantages__icon' src="./icons/advantages/icon_1.png" alt="">
                     <div class="advantages__descr">
                         <span>Офисы в Китае и России</span>
@@ -90,7 +93,7 @@
                     </div>
                 </div>
 
-                <div class="advantages__items">
+                <div data-aos="flip-right" data-aos-duration="1500" class="advantages__items">
                     <img class='advantages__icon' src="./icons/advantages/icon_2.png" alt="">
                     <div class="advantages__descr">
                         <span>Декларируем груз с оптимизацией</span>
@@ -99,7 +102,7 @@
                     </div>
                 </div>
 
-                <div class="advantages__items">
+                <div data-aos="flip-left" data-aos-duration="1500" class="advantages__items">
                     <img class='advantages__icon' src="./icons/advantages/icon_3.png" alt="">
                     <div class="advantages__descr">
                         <span>Квалифицированные кадры</span>
@@ -109,7 +112,7 @@
                     </div>
                 </div>
 
-                <div class="advantages__items">
+                <div data-aos="flip-right" data-aos-duration="1500" class="advantages__items">
                     <img class='advantages__icon' src="./icons/advantages/icon_4.png" alt="">
                     <div class="advantages__descr">
                         <span>Осуществляем поиск производителей</span>
@@ -118,7 +121,7 @@
                     </div>
                 </div>
 
-                <div class="advantages__items">
+                <div data-aos="flip-left" data-aos-duration="1500" class="advantages__items">
                     <img class='advantages__icon' src="./icons/advantages/icon_5.png" alt="">
                     <div class="advantages__descr">
                         <span>Собственный склад в Китае</span>
@@ -127,7 +130,7 @@
                     </div>
                 </div>
 
-                <div class="advantages__items">
+                <div data-aos="flip-right" data-aos-duration="1500" class="advantages__items">
                     <img class='advantages__icon' src="./icons/advantages/icon_6.png" alt="">
                     <div class="advantages__descr">
                         <span>Перевод денег в Китай</span>
@@ -136,7 +139,7 @@
                     </div>
                 </div>
 
-                <div class="advantages__items">
+                <div data-aos="flip-left" data-aos-duration="1500" class="advantages__items">
                     <img class='advantages__icon' src="./icons/advantages/icon_7.png" alt="">
                     <div class="advantages__descr">
                         <span>Делаем оптовые поставки под ключ</span>
@@ -147,7 +150,7 @@
                     </div>
                 </div>
 
-                <div class="advantages__items">
+                <div data-aos="flip-right" data-aos-duration="1500" class="advantages__items">
                     <img class='advantages__icon' src="./icons/advantages/icon_8.png" alt="">
                     <div class="advantages__descr">
                         <span>Поездка на производство в Китай</span>
@@ -162,16 +165,18 @@
         </div>
     </section>
 
-    <section class="works">
+    <section id="works" class="works">
         <div class="container">
-            <h2 class="title">Наша работа - больше чем просто доставка</h2>
-            <div class="line"></div>
-            <div class="subtitle">Мы организуем перевозки из Китая - оперативно и надежно, с учетом особенностей
+            <h2 data-aos="zoom-in" data-aos-duration="1500" class="title">Наша работа - больше чем просто доставка</h2>
+            <div data-aos="zoom-in" data-aos-duration="1500" class="line"></div>
+            <div data-aos="zoom-in" data-aos-duration="1500" class="subtitle">Мы организуем перевозки из Китая -
+                оперативно и надежно, с учетом особенностей
                 груза
                 и ваших требований по срокам и бюджету.</div>
 
             <div class="works__wrapper">
-                <div class="works__items">
+                <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2000"
+                    class="works__items">
                     <img src="./img/works/icon_1.jpg" alt="">
                     <div class="works__descr">
                         <span>Страховка груза</span>
@@ -182,7 +187,8 @@
                     </div>
                 </div>
 
-                <div class="works__items">
+                <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1300"
+                    class="works__items">
                     <img src="./img/works/icon_2.jpg" alt="">
                     <div class="works__descr">
                         <span>Логистика последней мили</span>
@@ -193,7 +199,8 @@
                     </div>
                 </div>
 
-                <div class="works__items">
+                <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2000"
+                    class="works__items">
                     <img src="./img/works/icon_3.jpg" alt="">
                     <div class="works__descr">
                         <span>Мы всегда смотрим вперед</span>
@@ -205,7 +212,7 @@
         </div>
     </section>
 
-    <section class="agent">
+    <section data-aos="zoom-in-right" data-aos-duration="1000" class="agent">
         <div class="container">
             <img src="./icons/agent_icon.png" alt="agent">
             <h2 class="title title_advantage">Агент в Китае</h2>
@@ -216,14 +223,15 @@
         </div>
     </section>
 
-    <section class="prices">
+    <section id="prices" class="prices">
         <div class="container">
-            <h2 class="title">Цены на любой вариант доставки</h2>
-            <div class="line"></div>
-            <div class="subtitle">Перевозки грузов на дальние расстояния без каких-либо ограничений.
+            <h2 data-aos="zoom-in" data-aos-duration="1500" class="title">Цены на любой вариант доставки</h2>
+            <div data-aos="zoom-in" data-aos-duration="1500" class="line"></div>
+            <div data-aos="zoom-in" data-aos-duration="1500" class="subtitle">Перевозки грузов на дальние расстояния без
+                каких-либо ограничений.
                 Любой груз доставим вовремя.</div>
             <div class="prices__wrapper">
-                <div class="prices__items">
+                <div data-aos="flip-left" data-aos-duration="1500" class="prices__items">
                     <div class="prices__header">Доставка морем</div>
                     <img src="./icons/price/icon_1.png" alt="">
                     <div class="prices__price">Доставка 35-50 дней <br>
@@ -233,7 +241,7 @@
                     <button class="button button_tabs">Подробнее</button>
                 </div>
 
-                <div class="prices__items">
+                <div data-aos="flip-left" data-aos-duration="1500" class="prices__items">
                     <div class="prices__header">Ж/Д доставка</div>
                     <img src="./icons/price/icon_2.png" alt="">
                     <div class="prices__price">
@@ -244,7 +252,7 @@
                     <button class="button button_tabs">Подробнее</button>
                 </div>
 
-                <div class="prices__items">
+                <div data-aos="flip-left" data-aos-duration="1500" class="prices__items">
                     <div class="prices__header">Автодоставка</div>
                     <img src="./icons/price/icon_3.png" alt="">
                     <div class="prices__price">Доставка 12-20 дня<br>
@@ -254,7 +262,7 @@
                     <button class="button button_tabs">Подробнее</button>
                 </div>
 
-                <div class="prices__items">
+                <div data-aos="flip-left" data-aos-duration="1500" class="prices__items">
                     <div class="prices__header">Авиа доставка</div>
                     <img src="./icons/price/icon_4.png" alt="">
                     <div class="prices__price">Доставка 1-12 дней<br>
@@ -269,22 +277,24 @@
 
     <section class="consultation">
         <div class="container">
-            <h2 class="consultation__title">Заказать бесплатную консультацию</h2>
+            <h2 data-aos="zoom-in" data-aos-duration="1500" class="consultation__title">Заказать бесплатную консультацию
+            </h2>
         </div>
 
-        <div class="consultation__wrapper">
+        <div data-aos="flip-up" data-aos-duration="1500" class="consultation__wrapper">
             <div class="wrapper wrapper_img"><img src="./icons/consultation_icon.png" alt=""></div>
-            <form action="#" class="feed-form">
-                <input name="name" required placeholder="Ваше имя..." type="text">
-                <input name="phone" required placeholder="Ваш номер телефона...">
-                <input name="email" required placeholder="Ваш E-mail..." type="email">
-
+            <form id="consultation-form" action="#" class="feed-form">
+                <div class="feed-form_items"><input name="name" required placeholder="Ваше имя..." type="text"></div>
+                <div class="feed-form_items"><input name="phone" required placeholder="Ваш номер телефона..."></div>
+                <div class="feed-form_items"><input name="email" required placeholder="Ваш E-mail..." type="email">
+                </div>
+                <div class="wrapper wrapper_button"><button class="button button_form">Отправить заявку</button></div>
             </form>
-            <div class="wrapper wrapper_button"><button class="button button_form">Отправить заявку</button></div>
+
         </div>
     </section>
 
-    <section class="managers">
+    <section data-aos="zoom-in-right" data-aos-duration="1000" class="managers">
         <div class="container">
             <img src="./icons/manager_icon.png" alt="manager">
             <h2 class="title title_advantage">Менеджеры компании</h2>
@@ -295,11 +305,11 @@
         </div>
     </section>
 
-    <section class="methods">
+    <section id="methods" class="methods">
         <div class="container">
-            <h2 class="title">Схема работы с нами</h2>
+            <h2 data-aos="zoom-in" data-aos-duration="1500" class="title">Схема работы с нами</h2>
             <div class="methods__wrapper">
-                <div class="methods__items">
+                <div data-aos="flip-right" data-aos-duration="1000" class="methods__items">
                     <img src="./icons/scheme_work/icon_1.png" alt="">
                     <div class="methods__descr">
                         <span>Заявка</span>
@@ -307,7 +317,7 @@
                     </div>
                 </div>
 
-                <div class="methods__items">
+                <div data-aos="flip-right" data-aos-duration="1000" class="methods__items">
                     <img src="./icons/scheme_work/icon_2.png" alt="">
                     <div class="methods__descr">
                         <span>Аналитика доставки</span>
@@ -315,7 +325,7 @@
                     </div>
                 </div>
 
-                <div class="methods__items">
+                <div data-aos="flip-right" data-aos-duration="1000" class="methods__items">
                     <img src="./icons/scheme_work/icon_3.png" alt="">
                     <div class="methods__descr">
                         <span>Договор</span>
@@ -323,7 +333,7 @@
                     </div>
                 </div>
 
-                <div class="methods__items">
+                <div data-aos="flip-right" data-aos-duration="1000" class="methods__items">
                     <img src="./icons/scheme_work/icon_4.png" alt="">
                     <div class="methods__descr">
                         <span>Доставка на наш склад</span>
@@ -331,7 +341,7 @@
                     </div>
                 </div>
 
-                <div class="methods__items">
+                <div data-aos="flip-right" data-aos-duration="1000" class="methods__items">
                     <img src="./icons/scheme_work/icon_5.png" alt="">
                     <div class="methods__descr">
                         <span>Проверка груза</span>
@@ -339,7 +349,7 @@
                     </div>
                 </div>
 
-                <div class="methods__items">
+                <div data-aos="flip-right" data-aos-duration="1000" class="methods__items">
                     <img src="./icons/scheme_work/icon_6.png" alt="">
                     <div class="methods__descr">
                         <span>Доставка груза</span>
@@ -347,7 +357,7 @@
                     </div>
                 </div>
 
-                <div class="methods__items">
+                <div data-aos="flip-right" data-aos-duration="1000" class="methods__items">
                     <img src="./icons/scheme_work/icon_7.png" alt="">
                     <div class="methods__descr">
                         <span>Оплата</span>
@@ -358,78 +368,96 @@
         </div>
     </section>
 
-    <section class="comments">
+    <section id="comments" class="comments">
         <div class="container">
-            <h2 class="title">отзывы наших клиентов</h2>
-            <div class="line"></div>
-            <div class="subtitle">Мы всегда стараемся помочь клиентам, что бы они обращались к нам снова</div>
+            <h2 data-aos="zoom-in" data-aos-duration="1500" class="title">отзывы наших клиентов</h2>
+            <div data-aos="zoom-in" data-aos-duration="1500" class="line"></div>
+            <div data-aos="zoom-in" data-aos-duration="1500" class="subtitle">Мы всегда стараемся помочь клиентам, что
+                бы они обращались к нам снова</div>
         </div>
 
-        <div class="container container_carusel">
+        <div data-aos="zoom-in" data-aos-duration="1500" class="container container_carusel">
             <div class="carusel">
                 <div class="carusel__wrapper">
                     <div class="carusel__inner">
                         <img src="./img/slider/icon_1.png" alt="">
                         <div class="carusel__descr"><span>Анисимова Ольга</span>
-                            Хочу рассказать о компании Global Opt. Самое главное что меня радует, это быстрый поиск и анализ
+                            Хочу рассказать о компании Global Opt. Самое главное что меня радует, это быстрый поиск и
+                            анализ
                             определенного товара. Доставляла через компанию уже много раз, от расходных материалов для
-                            отеля, ло дольших партий детской одежды. Буду продолжать пользтваьбся услугами даной компании
+                            отеля, ло дольших партий детской одежды. Буду продолжать пользтваьбся услугами даной
+                            компании
                         </div>
-                    </div>  
+                    </div>
                 </div>
                 <div class="carusel__wrapper">
                     <div class="carusel__inner">
                         <img src="./img/slider/icon_1.png" alt="">
                         <div class="carusel__descr"><span>Пархоменко Август</span>
-                            Хочу рассказать о компании Global Opt. Самое главное что меня радует, это быстрый поиск и анализ
+                            Хочу рассказать о компании Global Opt. Самое главное что меня радует, это быстрый поиск и
+                            анализ
                             определенного товара. Доставляла через компанию уже много раз, от расходных материалов для
-                            отеля, ло дольших партий детской одежды. Буду продолжать пользтваьбся услугами даной компании
+                            отеля, ло дольших партий детской одежды. Буду продолжать пользтваьбся услугами даной
+                            компании
                         </div>
-                    </div>  
+                    </div>
                 </div>
                 <div class="carusel__wrapper">
                     <div class="carusel__inner">
                         <img src="./img/slider/icon_1.png" alt="">
                         <div class="carusel__descr"><span>Большаков Леопольд</span>
-                            Хочу рассказать о компании Global Opt. Самое главное что меня радует, это быстрый поиск и анализ
+                            Хочу рассказать о компании Global Opt. Самое главное что меня радует, это быстрый поиск и
+                            анализ
                             определенного товара. Доставляла через компанию уже много раз, от расходных материалов для
-                            отеля, ло дольших партий детской одежды. Буду продолжать пользтваьбся услугами даной компании
+                            отеля, ло дольших партий детской одежды. Буду продолжать пользтваьбся услугами даной
+                            компании
                         </div>
-                    </div>  
+                    </div>
                 </div>
                 <div class="carusel__wrapper">
                     <div class="carusel__inner">
                         <img src="./img/slider/icon_1.png" alt="">
                         <div class="carusel__descr"><span>Тимофеев Ян</span>
-                            Хочу рассказать о компании Global Opt. Самое главное что меня радует, это быстрый поиск и анализ
+                            Хочу рассказать о компании Global Opt. Самое главное что меня радует, это быстрый поиск и
+                            анализ
                             определенного товара. Доставляла через компанию уже много раз, от расходных материалов для
-                            отеля, ло дольших партий детской одежды. Буду продолжать пользтваьбся услугами даной компании
+                            отеля, ло дольших партий детской одежды. Буду продолжать пользтваьбся услугами даной
+                            компании
                         </div>
-                    </div>  
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="questions">
+    <section id="questions" class="questions">
         <div class="container">
-            <div class="questions__wrapper">
+            <div data-aos="zoom-in" data-aos-duration="1500" class="questions__wrapper">
 
                 <div class="questions__head">
-                    <div class="questions__title">Остались вопросы?</div>
+                    <h2 class="questions__title">Остались вопросы?</h2>
                     <div class="questions__subtitle">Напишите нам!</div>
                 </div>
 
-                <form action="#" class="feed-form feed-form_questions">
-                    <input name="name" required placeholder="Ваше имя..." type="text">
-                    <input name="phone" required placeholder="Ваш номер телефона...">
-                    <input name="email" required placeholder="Ваш E-mail..." type="email">
-                    <textarea name="text" id="" cols="30" rows="10" placeholder="Сообщение..." required
+                <form id="question-form" action="#" class="feed-form feed-form_questions">
+
+                    <div class="feed-form_items">
+                        <input name="name" required placeholder="Ваше имя..." type="text">
+                    </div>
+                    <div class="feed-form_items">
+                        <input name="phone" required placeholder="Ваш номер телефона...">
+                    </div>
+                    <div class="feed-form_items">
+                        <input name="email" required placeholder="Ваш E-mail..." type="email">
+                    </div>
+
+                    <textarea name="text" id="#" cols="30" rows="10" placeholder="Сообщение..." required
                         maxlength="200"></textarea>
 
+                    <div class="button_wrapper"><button class="button button_mg">Отправить заявку</button></div>
                 </form>
 
-                <button class="button button_mg">Отправить заявку</button>
+
 
             </div>
         </div>
@@ -438,8 +466,7 @@
     <div class="maps">
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1874.6935597678782!2d37.62604474457445!3d55.748877049637905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54af8f4b2bb81%3A0x796b6bb427f2184b!2z0KHQsNC00L7QstC90LjRh9C10YHQutCw0Y8g0YPQuy4sIDUsINC-0YTQuNGBIDQtNiwg0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8sIDExNTAzNQ!5e0!3m2!1sru!2sua!4v1598258049971!5m2!1sru!2sua"
-            width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-            tabindex="0">
+            allowfullscreen="" aria-hidden="false" tabindex="0">
         </iframe>
     </div>
 
@@ -467,9 +494,14 @@
         </div>
     </footer>
 
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <a href="#up" class="pageup pageup_animation"> <img src="./icons/arrow_up.svg" alt="up"></a>
+
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./js/aos.js"></script>
     <script src="./js/slick.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/jquery.maskedinput.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 
