@@ -6,7 +6,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
 
-  &_items{
+  &_items {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -25,18 +25,17 @@
     padding: 0 20px;
   }
 
+  input.error{
+    margin-bottom: 0;
+  }
+
   &_questions {
     margin-top: 17px;
 
-    &_items{
-      display: flex;
-      flex-direction: column;
-      padding: 10px;
-    }
-
-    input{
+    input {
       margin: 0 auto;
     }
+
     textarea {
       padding: 0;
       margin: 10px auto 0 auto;
@@ -51,12 +50,13 @@
     }
   }
 
-  textarea{
+  textarea {
     padding-top: 20px;
   }
 
-  .error{
-    margin: 0 auto;
+  .error {
+    padding-left: 20px;
+    width: 100%;
     font-size: 12px;
     color: red;
   }

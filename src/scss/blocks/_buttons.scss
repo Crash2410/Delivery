@@ -30,10 +30,11 @@
 
   &_mg{
     display: block;
-    margin: 16px auto 0 auto;
+    margin: 20px auto 0 auto;
+  }
+  &_wrapper{
+    position: relative;
+    margin: 0 auto;
   }
 
-  &__wrapper{
-    width: 100%;
-  }
 }

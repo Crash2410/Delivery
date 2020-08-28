@@ -2,13 +2,13 @@ $(document).ready(function () {
   // Slider
 
   $(".carusel").slick({
-    speed: 1200,
+    speed: 1000,
     centerMode: true,
     slidesToShow: 3,
     prevArrow:
-      '<button type="button" class="slick-prev" aria-label="Previous"><img src ="../../icons/arrow_left.png"></button>',
+      '<button type="button" class="slick-prev" aria-label="Previous"><img src ="../../icons/arrow_left.png" alt ="arrow"></button>',
     nextArrow:
-      '<button type="button" class="slick-next" aria-label="Next"><img src ="../../icons/arrow_right.png"></button>',
+      '<button type="button" class="slick-next" aria-label="Next"><img src ="../../icons/arrow_right.png" alt ="arrow"></button>',
     responsive: [
       {
         breakpoint: 1250,
@@ -115,5 +115,6 @@ window.addEventListener("DOMContentLoaded", () => {
 
 // AOS.JS
 
-AOS.init({
-});
+
+
+AOS.init({});
