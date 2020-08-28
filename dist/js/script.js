@@ -114,7 +114,4 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 
 // AOS.JS
-
-
-
 AOS.init({});
