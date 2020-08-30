@@ -53,9 +53,49 @@
     transform: translateY(-50%);
     left: 41%;
     border: none;
-    background-color: white;
+    background: rgba($color: white, $alpha: 0);
     outline: none;
     z-index: 1;
+
+    &:active {
+      .arrow {
+        &_left {
+          &::before,
+          &:after {
+            top: 1px;
+            left: 1px;
+            box-shadow: 0 0 0 30px #eb7039 inset;
+          }
+        }
+        &_right {
+          &::before,
+          &:after {
+            top: 1px;
+            left: 1px;
+            box-shadow: 0 0 0 30px #eb7039 inset;
+          }
+        }
+      }
+    }
+
+    &:hover {
+      .arrow {
+        &_left {
+          &::before,
+          &:after {
+            position: relative;
+            box-shadow: 0 0 0 30px #eb7039 inset, 1px 1px 10px #eb7039;
+          }
+        }
+        &_right {
+          &::before,
+          &:after {
+            position: relative;
+            box-shadow: 0 0 0 30px #eb7039 inset, 1px 1px 10px #eb7039;
+          }
+        }
+      }
+    }
   }
 
   .slick-next {

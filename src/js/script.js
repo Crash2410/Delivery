@@ -6,9 +6,9 @@ $(document).ready(function () {
     centerMode: true,
     slidesToShow: 3,
     prevArrow:
-      '<button type="button" class="slick-prev" aria-label="Previous"><img src ="../../icons/arrow_left.png" alt ="arrow"></button>',
+      '<button type="button" class="slick-prev" aria-label="Previous"><div class="arrow_left"></div></button>',
     nextArrow:
-      '<button type="button" class="slick-next" aria-label="Next"><img src ="../../icons/arrow_right.png" alt ="arrow"></button>',
+      '<button type="button" class="slick-next" aria-label="Next"><div class="arrow_right"></div></button>',
     responsive: [
       {
         breakpoint: 1250,

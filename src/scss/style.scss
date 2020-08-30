@@ -1,12 +1,10 @@
-@import './libs/bootstrap-reboot.min';
-@import './libs/aos';
-@import './libs/slick';
-
+@import "./libs/bootstrap-reboot.min";
+@import "./libs/aos";
+@import "./libs/slick";
 
 * {
   font-family: "Roboto", sans-serif;
 }
-
 
 .container {
   width: 1150px;
@@ -25,6 +23,11 @@ iframe {
   border: none;
 }
 
+:active, :hover, :focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
 @import "blocks/header";
 @import "blocks/buttons";
 @import "blocks/promo";
@@ -41,11 +44,13 @@ iframe {
 @import "blocks/managers";
 @import "blocks/methods";
 @import "blocks/comments";
+@import "blocks/arrows";
 @import "blocks/carusel";
 @import "blocks/questions";
 @import "blocks/contacts";
 @import "blocks/footer";
 @import "blocks/maps";
 @import "blocks/pageup";
+@import './base/animation';
 
 @import "base/media";
